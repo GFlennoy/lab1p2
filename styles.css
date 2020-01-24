@@ -1,0 +1,131 @@
+.uno {
+  font-size: 16px;
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  text-decoration: none;
+  padding: 0;
+  margin: 12px;
+  display: block;
+}
+
+body {
+  background-color: #f9fafc;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-portion {
+  color: #69696a;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.gray-line {
+  border-left: 2px solid #69696a;
+  color: #69696a;
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 24px;
+  padding-left: 9px;
+}
+.buttons1 {
+  background-color: #000;
+  border: none;
+  color: #f9fafc;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 28px;
+  display: block;
+}
+.buttons2 {
+  background-color: #000;
+  border: none;
+  color: #f9fafc;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 28px;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul,
+  nav {
+    display: flex;
+    align-items: baseline;
+  }
+  .gray-line {
+    width: 50%;
+  }
+  aside {
+    width: -50%;
+    position: relative;
+  }
+  section {
+    flex-direction: column-reverse;
+  }
+  .circlex {
+    background-color: rgba(247, 136, 167, 0.6);
+    width: 130px;
+    height: 130px;
+    opacity: 0.8;
+    position: absolute;
+    border-radius: 300%;
+    transform: translatex(-50%);
+    right: 90px;
+    top: -100px;
+  }
+  .circley {
+    background-color: rgba(247, 193, 162, 0.7);
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    position: absolute;
+    border-radius: 600%;
+    right: 100px;
+    top: -20px;
+  }
+  .circlez {
+    background-color: rgba(207, 130, 213, 0.6);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 600%;
+    opacity: 0.8;
+    right: 110px;
+    top: -80px;
+  }
+
+  .buttons1 {
+    background-color: black;
+    border-radius: 28px;
+    height: 20%;
+  }
+  .buttons2 {
+    background-color: black;
+    border-radius: 28px;
+    width: 15%;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    right: 45%;
+  }
+}
